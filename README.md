@@ -25,6 +25,7 @@ Main topics:
 ### `/bifurcation_analysis`
 Contains MATLAB code for bifurcation analysis using MatCont.
 
+```text
 bifurcation_analysis/
 │
 ├── matlab/
@@ -47,6 +48,7 @@ bifurcation_analysis/
 │
 └── heteroclinic/
     └── approx_cycle/
+```
 
 ---
 
