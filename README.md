@@ -59,6 +59,18 @@ Contains MATLAB scripts and tools for post-processing and editing of outputs:
 - refinement of diagrams and figures
 - preparation of visualizations for analysis and presentation
 
+### `/numerical_simulation_pde`
+Contains MATLAB code for numerical simulation (PDE).
+```text
+numerical_simulations/
+│
+├── Kerner_Konhauser_FD.m
+├── Simulation.m
+├── Initial_condition.m
+├── EE_KK.m
+└── travelling_wave_speed.m
+```
+
 ## Technologies
 
 - MATLAB

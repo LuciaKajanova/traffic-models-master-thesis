@@ -15,7 +15,7 @@ This folder contains MATLAB implementations of the Kerner–Konhäuser (KK) traf
   - evolves density and velocity in time  
   - produces outputs for further analysis (3D + heatmaps)
 
-- **`Inicial_condition.m`**  
+- **`Initial_condition.m`**  
   Defines initial conditions for the simulation:
   - initial density profile  
   - initial velocity profile  
