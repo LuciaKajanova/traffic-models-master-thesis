@@ -74,7 +74,7 @@ fig1 = figure;
 set(fig1, 'Units', 'centimeters');
 set(fig1, 'Position', [2 2 14 8]);
 
-%% rho – 3D
+%% rho ï¿½ 3D
 subplot(2,2,1)
 surf(X, TT, rho.', 'EdgeColor', 'none')
 view(45, 30)
@@ -85,7 +85,7 @@ title('Hustota (3D)', 'Interpreter', 'none', 'FontName', 'Arial')
 cb = colorbar;
 ylabel(cb, 'Hustota', 'Interpreter', 'latex')
 
-%% rho – heatmap
+%% rho ï¿½ heatmap
 subplot(2,2,2)
 imagesc(t_100, x, rho)
 set(gca, 'YDir', 'reverse') 
@@ -93,28 +93,31 @@ xlabel('t', 'Interpreter', 'latex')
 ylabel('x', 'Interpreter', 'latex')
 title('Hustota (heatmapa)', 'Interpreter', 'none', 'FontName', 'Arial')
 cb = colorbar;
+caxis([10 100])
 ylabel(cb, 'Hustota', 'Interpreter', 'latex')
 
-%% v – 3D
+%% v ï¿½ 3D
 subplot(2,2,3)
 surf(X, TT, v.', 'EdgeColor', 'none')
 view(45, 30)
 xlabel('x', 'Interpreter', 'latex')
 ylabel('t', 'Interpreter', 'latex')
 zlabel('$v(x,t)$', 'Interpreter', 'latex')
-title('Rıchlos (3D)', 'Interpreter', 'none', 'FontName', 'Arial')
+title('Rï¿½chlosï¿½ (3D)', 'Interpreter', 'none', 'FontName', 'Arial')
 cb = colorbar;
-ylabel(cb, 'Rıchlos', 'Interpreter', 'latex')
+caxis([0 120])
+ylabel(cb, 'Rï¿½chlosï¿½', 'Interpreter', 'latex')
 
-%% v – heatmap
+%% v ï¿½ heatmap
 subplot(2,2,4)
 imagesc(t_100, x, v)
 set(gca, 'YDir', 'reverse') 
 xlabel('t', 'Interpreter', 'latex')
 ylabel('x', 'Interpreter', 'latex')
-title('Rıchlos (heatmapa)', 'Interpreter', 'none', 'FontName', 'Arial')
+title('Rï¿½chlosï¿½ (heatmapa)', 'Interpreter', 'none', 'FontName', 'Arial')
 cb = colorbar;
-ylabel(cb, 'Rıchlos', 'Interpreter', 'latex')
+caxis([0 120])
+ylabel(cb, 'Rï¿½chlosï¿½', 'Interpreter', 'latex')
 
 %% Export
 
