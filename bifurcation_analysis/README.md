@@ -126,3 +126,4 @@ The saved diagrams are organized by the type of analysis, for example two-parame
 - The main bifurcation results are stored in the corresponding MatCont diagram folders.
 - Additional post-processing and figure-editing files are not required for reproducing the computations.
 - The folder names in the repository may be slightly reorganized for clarity compared to the original local MatCont folder structure.
+- Additional figure editing and visualization scripts are not included, as they are not required for reproducing the results.
