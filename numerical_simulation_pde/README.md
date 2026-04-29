@@ -31,8 +31,25 @@ This folder contains MATLAB implementations of the Kerner–Konhäuser (KK) traf
 
 ---
 
+### Requirements
+
+- MATLAB (tested with R2021a) or newer
+
+---
+
+### Running the simulation
+
+1. Open MATLAB  
+2. Set the working directory to the folder `numerical_simulation_pde/`  
+
+3. Run the main script:
+
+```matlab
+Simulation
+```
+---
+
 ### Notes
 
-- The scripts are designed to be run in MATLAB.
 - Some files depend on outputs from previous simulations.
 - Parameters and discretization settings can be modified directly in the scripts.
