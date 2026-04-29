@@ -2,6 +2,10 @@
 
 This folder contains all scripts and data used for the numerical simulation of the Kerner–Konhäuser (KK) traffic flow model based on real NGSIM data.
 
+## Purpose
+
+The goal of this folder is to provide a complete pipeline from real traffic data to numerical simulation and comparison with macroscopic traffic flow models.
+
 ## Structure
 
 ### R_code/
@@ -90,6 +94,49 @@ Due to its large size, the full dataset is not included in this repository.
 
 ---
 
-## Purpose
+## Requirements
 
-The goal of this folder is to provide a complete pipeline from real traffic data to numerical simulation and comparison with macroscopic traffic flow models.
+- MATLAB (tested with R2021a) or newer
+- R (tested with version 4.4.3)
+
+The following R packages are required:
+
+- tidyverse  
+- dplyr  
+- ggplot2  
+- lubridate  
+- viridis  
+- zoo  
+
+Install them using:
+
+```r
+install.packages(c("tidyverse", "dplyr", "ggplot2", "lubridate", "viridis", "zoo"))
+```
+
+The code was tested in a standard R environment without additional configuration.
+
+### Running the data processing pipeline
+
+1. Open R or RStudio  
+2. Set the working directory to the folder `NGSIM_data/`  
+
+3. Run the scripts in the following order:
+
+```r
+source("heatmaps.R")
+source("scatter_fit.R")
+source("initial_condition.R")
+source("boundary_condition.R")
+```
+
+### Running the simulation
+
+1. Open MATLAB  
+2. Set the working directory to the folder `NGSIM_data/Simulation/`  
+3. Run the scripts in the following order:
+
+```matlab
+Simulation_data
+Simulation_heatmap
+```

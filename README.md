@@ -97,12 +97,11 @@ Language used: Slovak
 
 ---
 
-## Technologies
+## Requirements
 
-- MATLAB  
-- MatCont  
-- R  
-- Quarto / LaTeX  
+- MATLAB (tested with R2021a) or newer 
+- MatCont (version 7p4 or newer)  
+- R (tested with version 4.4.3)  
 
 ---
 
@@ -117,4 +116,5 @@ Language used: Slovak
 ## Notes
 
 - Additional figure editing scripts are intentionally not included, as they are not required for reproducing results.
+- This repository is intended for reproducibility and research purposes.
 
