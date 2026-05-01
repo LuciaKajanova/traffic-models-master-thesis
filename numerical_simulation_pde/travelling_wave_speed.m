@@ -90,18 +90,21 @@ max_q_star = max(q_star)
 
 %% Bifurcation diagram
 
-% Open figure
-fig3 = openfig('two_parametric_diagram_final.fig');
-figure(fig3)
-hold on
+% You would need the two_parametric_diagram from bifurcation analysis
+% (Matonct).
 
-plot([min_q_star, max_q_star], [-c,-c], 'Color', 'red', 'Linewidth', 1.5)
+% Open figure
+%fig3 = openfig('two_parametric_diagram_final.fig');
+%figure(fig3)
+%hold on
+
+%plot([min_q_star, max_q_star], [-c,-c], 'Color', 'red', 'Linewidth', 1.5)
 
 % Figure size
-set(fig3, 'Units', 'centimeters')
-set(fig3, 'Position', [2 2 12 8])
+%set(fig3, 'Units', 'centimeters')
+%set(fig3, 'Position', [2 2 12 8])
 
-hold off
+%hold off
 
 % Export
 %exportgraphics(fig3, 'bifurcation_with_wave.pdf', 'ContentType', 'vector')
@@ -109,19 +112,19 @@ hold off
 %% Zoom 
 
 % Open figure
-fig4 = openfig('two_parametric_diagram_final.fig');
-figure(fig4)
-hold on
+%fig4 = openfig('two_parametric_diagram_final.fig');
+%figure(fig4)
+%hold on
 
-plot([min_q_star, max_q_star], [-c,-c], 'Color', 'red', 'Linewidth', 1.5)
-xlim([2480 2550])
-ylim([21.6 22])
+%plot([min_q_star, max_q_star], [-c,-c], 'Color', 'red', 'Linewidth', 1.5)
+%xlim([2480 2550])
+%ylim([21.6 22])
 
 % Figure size
-set(fig4, 'Units', 'centimeters')
-set(fig4, 'Position', [2 2 12 8])
+%set(fig4, 'Units', 'centimeters')
+%set(fig4, 'Position', [2 2 12 8])
 
-hold off
+%hold off
 
 
 
